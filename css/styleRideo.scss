@@ -1,0 +1,144 @@
+.middle {
+  margin-top: 40px;
+  text-align: center;
+  input[type="radio"] {
+    display: none;
+    &:checked {
+      + .box {
+        border: 3px solid #0478c9;
+        border-radius: 5%;
+        span {
+          &:before {
+            transform: translateY(0px);
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+  .box {
+    width: 130px;
+    height:120px;
+    background-color: #ffffff;
+    border: 1px solid #d4d4d4;
+    border-radius:5%;
+    padding: 5px;
+    transition: all 250ms ease;
+    will-change: transition;
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+    font-weight: 700;
+    &:active{
+      transform: translateY(10px);
+    }
+    span {
+      position: absolute;
+      transform: translate(0, 60px);
+      left: 0;
+      right: 0;
+      transition: all 300ms ease;
+      font-size: 13pt;
+      padding-top: 16px;
+      user-select: none;
+      color: #0478c9;
+      &:before {
+        font-size: 1.2em;
+        display: block;
+        transform: translateY(-80px);
+        opacity: 0;
+        transition: all 300ms ease-in-out;
+        font-weight: normal;
+        color:#000;
+      }
+    }
+  }
+
+}
+
+// form 
+
+$color: #0478c9;
+* {
+    box-sizing: border-box;
+}
+
+h1,
+p,
+input::-webkit-input-placeholder,
+button {
+    font-family: 'roboto', sans-serif;
+    font-size: 14px;
+}
+
+.form {
+    margin-top: 30px;
+    width: 100%;
+    padding: 1em;
+    margin-left: auto;
+    margin-right: auto;
+    .group {
+        position: relative;
+        padding-bottom: 1em;
+        label {
+            position: absolute;
+            pointer-events: none;
+            left: 0.5em;
+            top: .5em;
+            font-size: 18px;
+            transition: 0.2s ease all;
+            color: rgb(134, 134, 134);
+        }
+        input[type=text],[type=password] {
+            background-color: transparent;
+            padding: 0.75em 1.5em;
+            line-height: 1.5em;
+            border: 0;
+            display: block;
+            width: 100%;
+            margin-top: 2em;
+            border-bottom: 1px solid $color;
+            background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 96%, $color 4%);
+            background-position: -100em 0;
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            padding-left: 0.5em;
+            transition: 0.3s cubic-bezier(.64,.09,.08,1) all;
+            &:focus,
+            &:valid {
+                background-position: 0 0;
+                ~ label {
+                    color: $color;
+                    font-size: 12pt;
+                    font-weight:700;
+                    top: -1.5em;
+                }
+            }
+            &:focus {
+                outline: none;
+            }
+        }
+    }
+    input[type=submit] {
+        background-color: $color;
+        padding: 0.75em 1.5em;
+        line-height: 1.5em;
+        border: 0;
+        background-color: $color;
+        color: #fff;
+        text-transform: uppercase;
+        width: 100%;
+        display: inline-block;
+        box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2);
+        &:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 6px 0 rgba(0, 0, 0, 0.2);
+            cursor: pointer;
+        }
+    }
+}
+
+
+
+// box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.2);
