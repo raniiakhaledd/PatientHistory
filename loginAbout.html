@@ -3,97 +3,115 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-      <link rel="stylesheet" href="css/bootstrap.css">
+    <!-- Favicon -->
+      <link rel="icon" href="./assets/img/brand/Favicon.svg" type="image/png"> 
+      <link rel="stylesheet" href="./assets/css/argon.css">
+      <link rel="stylesheet" href="./css/bootstrap.css">
       <link rel="stylesheet" href="css/hover-min.css">
       <link rel="stylesheet" href="css/animate.css">
       <link rel="stylesheet" href="css/all.min.css">
       <link rel="stylesheet" href="css/fontawesome.min.css">
       <link href="https://fonts.googleapis.com/css?family=Chewy|Covered+By+Your+Grace&display=swap" rel="stylesheet">
       <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai|Ma+Shan+Zheng|Roboto+Condensed|Sniglet&display=swap" rel="stylesheet">
-      <link rel="stylesheet" href="css/style.css">
-
+      <link rel="stylesheet" href="./css/style.css">
+      
     <title>Patient History</title>
   </head>
   <body class="bg-About">
     <!--start-Navbar-->
-      <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+      <nav class="navbar navbar-expand-lg navbar-light fixed-top justify-content-between">
         <div class= "container">
-            <a class="navbar-brand" href="#">
-              <img src="imgs/logoww.svg" width="140" alt="Responsive image">
-            </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav  float-right">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li><button class="btn btn-outline-success" type="button">Main button</button></li>
-          </ul>
-        </div>
+          <img class="ml-2" src="imgs/logoww.svg" width="140" alt="Responsive image">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <div class="col-md-6">
+              </div>
+              <div class="col-md-6">
+                <div>
+                  <button class=" float-right Lang form-control col-3 btn my-1 my-sm-0">En</button><div class="toggle_container"><div class="block"></div></div>
+                </div>
+                  <button class=" float-right getapp form-control col-3 btn my-1 my-sm-0">Get App</button>
+              </div>
+            </div>
         </div>
       </nav>
     <!--End-Navbar-->
     <!--Start-cards-->
-    <div class=" cards container">
-        <div class="row">
-            <div class="col text-center">
-                <div class="card" style="width: 15rem; padding:15px; margin-bottom:10px;">
-                    <img src="imgs/Patirnt.svg" height="120" class="card-img-top" alt="...">
+    <section class="row col-xl-9 ml-xl-9 mt-2">
+      <div class="cards container">
+        <div class="row offset-xl-1 col-12">
+            <div class="col-xl-3 text-center">
+                <div class="card pt-2">
+                    <img src="imgs/Patirnt.svg" height="90" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <a href="PatientAccount.html" class="text-About">Patient</a>
+                        <a href="./examples/PatientAccount.html" class="h5 font-weight-bold text-decoration-none mb-0">Patient</a>
                     </div>
                 </div>
             </div>
-            <div class="col text-center">
-                <div class="card" style="width: 15rem; padding:15px;">
-                    <img src="imgs/Clinic.svg" height="120" class="card-img-top" alt="...">
+            <div class="col-xl-3 text-center">
+                <div class="card pt-2">
+                    <img src="imgs/Clinic.svg" height="90" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <a href="ClinicAccount.html" class="text-About">Clinic</a>
+                        <a href="./examples/ClinicAccount.html" class="h5 font-weight-bold text-decoration-none mb-0">Clinic</a>
                     </div>
                 </div>
             </div>
-          <div class="col text-center">
-                <div class="card" style="width: 15rem; padding:15px; margin-bottom:10px;">
-                    <img src="imgs/Hospital.svg" height="120" class="card-img-top" alt="...">
+            <div class="col-xl-3 text-center">
+                <div class="card pt-2">
+                    <img src="imgs/Hospital.svg" height="90" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <a href="HospitalAccount.html" class="text-About">Hospital</a>
+                        <a href="./examples/HospitalAccount.html" class="h5 font-weight-bold text-decoration-none mb-0">Hospital</a>
                     </div>
                 </div>
+            </div>
+          </div>
+        <div class="row offset-xl-1 col-12">
+          <div class="col-xl-3 text-center">
+            <div class="card pt-2">
+              <img src="imgs/x-ray.svg" height="90" class="card-img-top" alt="...">
+              <div class="card-body">
+                <a href="./examples/xRayAccount.html" class="h5 font-weight-bold text-decoration-none mb-0">X-ray</a>
+              </div>
+            </div>
+        </div>
+        <div class="col-xl-3 text-center">
+            <div class="card pt-2">
+              <img src="imgs/labs.svg" height="90" class="card-img-top" alt="...">
+              <div class="card-body">
+                <a href="./examples/LabsAccount.html" class="h5 font-weight-bold text-decoration-none mb-0">Labs</a>
+              </div>
+            </div>
+        </div>
+      <div class="col-xl-3 text-center">
+            <div class="card pt-2">
+                <img src="imgs/pharmacy.svg" height="90" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <a href="./examples/PharmAccount.html" class="h5 font-weight-bold text-decoration-none mb-0">Pharmacy</a>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    </section>
+
+    <!--End-cards-->
+    <footer>
+        <div class="container-fluid mt--5">
+          <div class="row copy-right">
+            <div class="col-md-6 text-center">
+              <p class="mt-4">Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | by <a href="index.html" target="">PHistory</a></p>
+            </div>
+            <div class="social-icon col-md-6 text-center">
+                <a href="https://m.facebook.com/Patient-history-102419981434494/" target="_blank"><i class="m-2 hvr-grow fab fa-facebook-f fa-1x"></i></a>
+                <a href="https://twitter.com/phistory3" target="_blank"><i class="m-2 hvr-grow fab fa-twitter fa-1x"></i></a>
+                <a href="https://www.instagram.com/patient_history_/" target="_blank"><i class="m-2 hvr-grow fab fa-instagram fa-1x"></i></a>
+                <a href="patienthistory1@gmail.com" target="_blank" ><i class="m-2 hvr-grow fab fa-google-plus-g fa-1x"></i></a>
+            </div>
           </div>
         </div>
-        <div class="row">
-            <div class="col text-center">
-            <div class="card" style="width: 15rem; padding:15px;  margin-bottom:10px;">
-                <img src="imgs/x-ray.svg" height="120" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <a href="xRayAccount.html" class="text-About">X-ray</a>
-                </div>
-            </div>
-        </div>
-        <div class="col text-center">
-            <div class="card" style="width: 15rem; padding:15px;">
-                <img src="imgs/labs.svg" height="120" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <a href="LabsAccount.html" class="text-About">Labs</a>
-                </div>
-            </div>
-        </div>
-      <div class="col text-center">
-            <div class="card" style="width: 15rem; padding:15px;">
-                <img src="imgs/pharmacy.svg" height="120" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <a href="PharmAccount.html" class="text-About">Pharmacy</a>
-                </div>
-            </div>
-        </div>
-        </div>
-      </div>
-    <!--End-cards-->
+    </footer>
     <!--JavaScript -->
     <script src="js/jquery-3.4.1.js"></script>
     <script src="js/popper.js"></script>

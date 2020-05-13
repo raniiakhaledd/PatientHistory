@@ -1,3 +1,7 @@
+.horizontal-scoroll {
+  width: 800px;
+  overflow-x: scroll;
+} 
 .row-text {
     background-color: white;
     border-radius: 10px;
@@ -28,28 +32,8 @@
     font-size: 16pt;
     color:white;
 }
-
-/* width */
-.scroll::-webkit-scrollbar {
-  width: 8px;
-}
-
-/* Track */
-.scroll::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 2px  #888888;  
-  border-radius: 10px;
-}
- 
-/* Handle */
-.scroll::-webkit-scrollbar-thumb {
-  background: #888888; 
-  border-radius: 10px;
-
-}
-
-/* Handle on hover */
-.scroll::-webkit-scrollbar-thumb:hover {
-  background: #acacac; 
+.ui.form .inline.field>:first-child,.ui.form .inline.fields .field>:first-child {
+  font-size: 14pt;
 }
 
 .female-bg {
@@ -66,59 +50,12 @@
   height: 24px;
 
 }
-
 .switch input { 
   opacity: 0;
   width: 0;
   height: 0;
 }
 
-.slider {
-  position: absolute;
-  cursor: pointer;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: #ccc;
-  -webkit-transition: .4s;
-  transition: .4s;
-}
-
-.slider:before {
-  position: absolute;
-  content: "";
-  height: 16px;
-  width: 16px;
-  left: 4px;
-  bottom: 4px;
-  background-color: white;
-  -webkit-transition: .4s;
-  transition: .4s;
-}
-
-input:checked + .slider {
-  background-color: #2196F3;
-}
-
-input:focus + .slider {
-  box-shadow: 0 0 1px #2196F3;
-}
-
-input:checked + .slider:before {
-  -webkit-transform: translateX(26px);
-  -ms-transform: translateX(26px);
-  transform: translateX(26px);
-}
-
-/* Rounded sliders */
-.slider.round {
-  border-radius: 34px;
-}
-
-.slider.round:before {
-  border-radius: 50%;
-}
 
 .img-header {
   background-image: url(../img/02.jpg);
@@ -128,5 +65,102 @@ input:checked + .slider:before {
 .bg-main {
   background-image: url(../img/BgLogin.jpg);
 }
+.title-info {
+  color: #0478bd;
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+.title-label {
+  font-size: 11pt;
+  padding-top:3px;
+  font-weight:600;
+} 
+.label-input {
+  font-size: 12pt;
+  padding-top:3px;
+  font-weight:600;
+}
+ .label-family {
+   font-size: 11pt;
+   margin-bottom: 8px;
+ }
+ .ui.selection.dropdown {
+   min-width: 11em;
+   min-height: 2em;
+ }
 
+.title-sub {
+  font-size: 11pt;
+  padding-bottom: 6px;
+}
+.ui.input>input:focus { 
+  border: 1px solid #0478bd;
+}
+.ui.form .inline.field>.selection.dropdown:focus {
+  border: 1px solid #0478bd;
+}
+.ui.selection.active.dropdown:hover .menu {
+  border: 1px solid #0478bd;
+ }
+.ui.selection.active.dropdown .menu {
+  border: 1px solid #0478bd;
+  &:hover {
+    border: 1px solid #0478bd;
+    &:focus {
+      border: 1px solid #0478bd;
+    }
+  }
+ }
+
+ .toggle {
+   padding-top:10px;
+	margin-bottom: auto;
+	
+	&:last-child {
+		margin-bottom: 0;
+	}
+}
+
+.toggle__wrapper {
+    display: flex;
+	flex-direction: column;
+    align-items: center;
+}
+.toggle__button { 
+	width: 60px;
+	height: 30px;
+  display: flex;
+  align-items: center;
+  overflow: visible;
+  padding: 5px;
+  position: relative;
+	border-radius: 25px;
+  cursor: pointer;
+	border: solid 4px #FFF;
+	background-color: transparent;
+	transition: all .2s ease;
+}
+
+.toggle__switch { 
+	width: 15px;
+  height: 15px;
+	position: absolute;
+	border-radius: 100%;
+	transition: all .4s ease;
+	background-color:#FFF;
+}
+
+.toggle__button[aria-checked="true"] {
+	border-color:rgb(56, 214, 103);
+}
+
+.toggle__button[aria-checked="false"] .toggle__switch {
+	left: 5px;
+}
+
+.toggle__button[aria-checked="true"] .toggle__switch {
+	right: 5px; 
+	background-color: rgb(56, 214, 103);
+}
+// scroll horezintel
 
